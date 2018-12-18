@@ -9,4 +9,10 @@ class MP3Importer
     f2 = f_list.select {|entry| entry.include?(".mp3")}
     f2
   end
+  
+  def import
+    files.each do |file|
+      Song.new_by_filename(file)
+    end 
+  end 
 end 
