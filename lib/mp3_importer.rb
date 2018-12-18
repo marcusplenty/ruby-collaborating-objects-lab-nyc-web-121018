@@ -9,4 +9,8 @@ class MP3Importer
     f2 = f_list.select {|entry| entry.include?(".mp3")}
     f2
   end
+  
+  def import
+    
+  end 
 end 
